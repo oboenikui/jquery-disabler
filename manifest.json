@@ -1,0 +1,20 @@
+﻿{
+    "name": "jQuery Disabler",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "jQueryを無効化する",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "main.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "permissions": [
+        "<all_urls>"
+    ]
+}
